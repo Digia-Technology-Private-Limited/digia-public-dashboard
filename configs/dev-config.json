@@ -1,0 +1,10 @@
+{
+    "baseUrl": "https://dev.digia.tech/api/v1",
+    "firebaseApiKey": "",
+    "firebaseAppId": "",
+    "firebaseMessagingSenderId": "",
+    "firebaseProjectId": "",
+    "firebaseAuthDomain": "",
+    "firebaseStorageBucket": "",
+    "firebaseMeasurementId": ""
+}
