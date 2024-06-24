@@ -1,10 +1,12 @@
-FROM public.ecr.aws/k2y9b2n4/digia-dashboard:1.0.0 AS flutter-build
+FROM public.ecr.aws/k2y9b2n4/digia-dashboard:1.2.2 AS flutter-build
 
 ARG env
 
 WORKDIR /app
 
 RUN flutter doctor
+
+COPY configs configs
 
 RUN flutter build web --release --no-tree-shake-icons --dart-define-from-file=configs/$env-config.json
 
